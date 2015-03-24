@@ -5,7 +5,7 @@
         if (http.readyState == 4 && http.status == 200){
           callback(JSON.parse(http.responseText)); // success
         }
-      }; 
+      };
       var url = 'https://httpbin.org/get';
       http.open('GET', url, true);
       http.setRequestHeader('Content-type', 'application/json');
@@ -57,7 +57,7 @@ var showBookMarklet = function() {
       jobdata.push( $('div.content:eq(0)').find('span:eq(2)').text() );
       jobdata.push( $('#offsite-apply-button').attr('href') );
       jobdata.push( "LinkedIn" );
-      //companyObject 
+      //companyObject
       companydata.push( $('div.content:eq(0)').find('span:eq(0)').text() );
       companydata.push( $('div.content:eq(0)').find('.posted').text() );
       var otherDetails = $('.value');
@@ -103,7 +103,7 @@ var showBookMarklet = function() {
     // myCSS += '#my_unique_id .squaredThree label:after, .favorite label:after {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);opacity: 0;content: "";position: absolute;width: 9px;height: 5px;background: transparent;top: 4px;left: 4px;border: 3px solid #ff4081;border-top: none;border-right: none;-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-o-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);}';
     // myCSS += '#my_unique_id .squaredThree label:hover::after, .favorite label:hover::after {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter: alpha(opacity=30);opacity: 0.3;}';
     // myCSS += '#my_unique_id .squaredThree input[type=checkbox]:checked + label:after, .favorite input[type=checkbox]:checked + label:after {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity=100);opacity: 1;}';
-    /* then insert it */ 
+    /* then insert it */ //INSERTS THE CSS
     myStyleNode =  document.createElement('style');
     myStyleNode.innerHTML = myCSS;
     document.body.appendChild(myStyleNode);
@@ -126,7 +126,7 @@ var showBookMarklet = function() {
     myHTML += '</div>';
     myHTML += '<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>';
     myHTML += '<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>';
-    /* and create the node */
+    /* and create the node */ //INSERTS THE HTML
     myHTMLNode = document.createElement('div');
     myHTMLNode.id = 'my_unique_id';
     myHTMLNode.innerHTML = myHTML;
@@ -137,7 +137,7 @@ var showBookMarklet = function() {
     var updataJobObj = function(){
       jobObject['originURL'] = site;
       jobObject['jobURL'] = pathname;
-      jobObject['sourceNetwork'] = document.getElementById('psource').value;    
+      jobObject['sourceNetwork'] = document.getElementById('psource').value;
       jobObject['jobTitle'] = document.getElementById('pjobtitle').value;
       jobObject['location'] = document.getElementById('plocation').value;
       jobObject['company']['name'] = document.getElementById('pcompany').value;
@@ -145,7 +145,7 @@ var showBookMarklet = function() {
       jobObject["company"]['jobFunction'] = document.getElementById('pjobfunction').value;
       jobObject["company"]['employmentType'] = document.getElementById('pemployment').value;
       jobObject["company"]['industry'] = document.getElementById('pindustry').value;
-      jobObject["company"]['salary'] = document.getElementById('psalary').value;      
+      jobObject["company"]['salary'] = document.getElementById('psalary').value;
       jobObject["applied"] = document.getElementById("papplied").checked;
       jobObject["favorite"] = document.getElementById("pfavorite").checked;
       console.log(jobObject);
@@ -157,5 +157,5 @@ var showBookMarklet = function() {
       pandabutton.addEventListener('click', updataJobObj, false);
     } else if (el.attachEvent) {
       pandabutton.attachEvent('onclick', updataJobObj);
-    }  
+    }
   };
