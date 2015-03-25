@@ -128,12 +128,13 @@ var showBookMarklet = function() {
     myHTML += '<br>Employment Type: <br><input id="pemployment" type="text" value="' + (jobObject["company"]["employmentType"] || "") + '">';
     myHTML += '<br>Industry: <br><input id="pindustry" type="text" value="' + (jobObject["company"]["industry"] || "") + '">';
     myHTML += '<br>Salary: <br><input id="psalary" type="text" value="' + (jobObject["company"]["salary"] || "") + '">';
-    myHTML += '<input type="checkbox" value="None" class= "checkbox" id="papplied" name="check" /><label for="papplied">Applied?</label>';
-    myHTML += '<br><input type="checkbox" value="None" id="pfavorite" name="check" /><label for="pfavorite">Favorite?</label>';
+
+    myHTML += '<br><div class="checkA"><input type="checkbox" value="None"/></div> <div class="textA">Applied</div>';
+    myHTML += '<br><div class="checkF"><input type="checkbox" value="None"/></div> <div class="textF">Favorite</div>';
     myHTML += '<br><button id="pandabutton" class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="mdi-content-send right"></i></button>';
     myHTML += '</div>';
-    // myHTML += '<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>';
-    // myHTML += '<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>';
+    // myHTML += '<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>';  class= "checkbox" id="papplied" name="check"
+    // myHTML += '<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>'; id="pfavorite" name="check"
     /* and create the node */ //INSERTS THE HTML
     myHTMLNode = document.createElement('div');
     myHTMLNode.id = 'my_unique_id';
