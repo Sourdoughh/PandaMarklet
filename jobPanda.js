@@ -92,17 +92,24 @@ var showBookMarklet = function() {
         myHTML, myHTMLNode;
 
     /* add the css */
+    // myCSS = '@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);';
+    // myCSS += '#my_unique_id, #my_unique_id *{color:#fff;line-height:0;font-size:15px;text-shadow:none;}';
+    // myCSS += '#my_unique_id {z-index:10000;position:fixed;top:0;right:0px;background-color:#fff;}';
+    // myCSS += '#my_unique_id .c {height: 900px;width: 250px;padding:20px; padding-top: 50px; background-color: #00bcd4}';
+    // // myCSS += '#my_unique_id #pandabutton {background-color:#ff4081; color: #fff; border-radius: 5px; padding: 2px 20px; margin-top: 5px}';
+    // myCSS += '#my_unique_id input {color: "#333"}';
+    // // myCSS += '#my_unique_id .squaredThree, .favorite {display: inline-block;width:20px;margin:20pxauto;position:relative;float:right; margin-top:3px}';
+    // // myCSS += '#my_unique_id .squaredThree label, .favorite label {cursor: pointer;position: absolute;width: 20px;height: 20px;top: 0;border-radius: 4px;-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);background: -webkit-linear-gradient(top, #fff 0%, #eee 100%);background: -moz-linear-gradient(top, #fff 0%, #eee 100%);background: -o-linear-gradient(top, #fff 0%, #eee 100%);background: -ms-linear-gradient(top, #fff 0%, #eee 100%);background: linear-gradient(top, #fff 0%, #eee 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fff", endColorstr="#eee",GradientType=0 );}';
+    // // myCSS += '#my_unique_id .squaredThree label:after, .favorite label:after {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);opacity: 0;content: "";position: absolute;width: 9px;height: 5px;background: transparent;top: 4px;left: 4px;border: 3px solid #ff4081;border-top: none;border-right: none;-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-o-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);}';
+    // // myCSS += '#my_unique_id .squaredThree label:hover::after, .favorite label:hover::after {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter: alpha(opacity=30);opacity: 0.3;}';
+    // // myCSS += '#my_unique_id .squaredThree input[type=checkbox]:checked + label:after, .favorite input[type=checkbox]:checked + label:after {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity=100);opacity: 1;}';
+
     myCSS = '@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);';
     myCSS += '#my_unique_id, #my_unique_id *{color:#fff;line-height:0;font-size:15px;text-shadow:none;}';
     myCSS += '#my_unique_id {z-index:10000;position:fixed;top:0;right:0px;background-color:#fff;}';
     myCSS += '#my_unique_id .c {height: 900px;width: 250px;padding:20px; padding-top: 50px; background-color: #00bcd4}';
-    myCSS += '#my_unique_id #pandabutton {background-color:#ff4081; color: #fff; border-radius: 5px; padding: 2px 20px; margin-top: 5px}';
-    myCSS += '#my_unique_id input {color: "#333"}';
-    myCSS += '#my_unique_id .squaredThree, .favorite {display: inline-block;width:20px;margin:20pxauto;position:relative;float:right; margin-top:3px}';
-    myCSS += '#my_unique_id .squaredThree label, .favorite label {cursor: pointer;position: absolute;width: 20px;height: 20px;top: 0;border-radius: 4px;-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);background: -webkit-linear-gradient(top, #fff 0%, #eee 100%);background: -moz-linear-gradient(top, #fff 0%, #eee 100%);background: -o-linear-gradient(top, #fff 0%, #eee 100%);background: -ms-linear-gradient(top, #fff 0%, #eee 100%);background: linear-gradient(top, #fff 0%, #eee 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fff", endColorstr="#eee",GradientType=0 );}';
-    myCSS += '#my_unique_id .squaredThree label:after, .favorite label:after {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);opacity: 0;content: "";position: absolute;width: 9px;height: 5px;background: transparent;top: 4px;left: 4px;border: 3px solid #ff4081;border-top: none;border-right: none;-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-o-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);}';
-    myCSS += '#my_unique_id .squaredThree label:hover::after, .favorite label:hover::after {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter: alpha(opacity=30);opacity: 0.3;}';
-    myCSS += '#my_unique_id .squaredThree input[type=checkbox]:checked + label:after, .favorite input[type=checkbox]:checked + label:after {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity=100);opacity: 1;}';
+
+
     /* then insert it */ //INSERTS THE CSS
     myStyleNode =  document.createElement('style');
     myStyleNode.innerHTML = myCSS;
@@ -110,6 +117,7 @@ var showBookMarklet = function() {
 
     /* build the HTML element */
     // myHTML = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">';
+    myHTML = '<link rel="stylesheet" href="styles.css">';
     myHTML += '<div class="c">';
     myHTML += 'Source Network: <br><input id="psource" type="text" value="' + (jobObject["sourceNetwork"] || "") + '">';
     myHTML += '<br>Company: <br><input id="pcompany" type="text" value="' + (jobObject["company"]["name"] || "") + '">';
@@ -120,11 +128,11 @@ var showBookMarklet = function() {
     myHTML += '<br>Employment Type: <br><input id="pemployment" type="text" value="' + (jobObject["company"]["employmentType"] || "") + '">';
     myHTML += '<br>Industry: <br><input id="pindustry" type="text" value="' + (jobObject["company"]["industry"] || "") + '">';
     myHTML += '<br>Salary: <br><input id="psalary" type="text" value="' + (jobObject["company"]["salary"] || "") + '">';
-    myHTML += '<input type="checkbox" value="None" id="papplied" name="check" /><label for="papplied">Applied?</label>';
+    myHTML += '<input type="checkbox" value="None" class= "checkbox" id="papplied" name="check" /><label for="papplied">Applied?</label>';
     myHTML += '<br><input type="checkbox" value="None" id="pfavorite" name="check" /><label for="pfavorite">Favorite?</label>';
     myHTML += '<br><button id="pandabutton" class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="mdi-content-send right"></i></button>';
     myHTML += '</div>';
-    myHTML += '<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>';
+    // myHTML += '<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>';
     // myHTML += '<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>';
     /* and create the node */ //INSERTS THE HTML
     myHTMLNode = document.createElement('div');
